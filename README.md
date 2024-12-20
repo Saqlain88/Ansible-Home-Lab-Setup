@@ -167,5 +167,10 @@ ansible -m ping all
 # Issue
 <br />
 
+If you are facing any issues with yum, follow steps mentioned in below link:<br />
+
+[https://superuser.com/questions/1373881/centos-7-cannot-find-a-valid-baseurl-for-repo-base-7-x86-64-when-i-run-yum-upda](url)
+<br />
+
 
 
