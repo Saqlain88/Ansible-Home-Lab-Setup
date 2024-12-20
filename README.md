@@ -12,15 +12,15 @@ Set up your own Ansible lab for hands on practises.
 
 # Description
 
-Below are the few steps that we'll be doing before jumping into any action.
-
-Step 1: Install Vagrant and VirtualBox (version doesn't matter, as long as they are COMPATIBLE with one another).
-Step 2: Install Putty and WinSCP. We are going to use them to configure our password less ssh conectivity.
-Step 3: If you are using Windows OS, go to C:\Users\%username%\ and search for .ssh folder (its a hidden folder, make sure to check properly.) 
-Step 4: If you didn't find the .ssh folder in Step 3, open command prompt and run `ssh-keygen -t rsa`. Now it must me asking some questions over there (BORINGGGG). We will keep smashing enter, until all the question ends (YES we are inattentive and careless).
-Step 5: Now that .ssh is there, open it and you must be having id_rsa files over there.
-Step 6: We created a folder AnsibleLab (anywhere you want). Opened it. then we opened command prompt at this location and run `vagrant init`. Vagrantfile file was generated inside AnsibleLab folder.
-Step 7: Opened the Vagrantfile with notepad and pasted below code:
+Below are the few steps that we'll be doing before jumping into any action.<br />
+<br />
+Step 1: Install Vagrant and VirtualBox (version doesn't matter, as long as they are COMPATIBLE with one another). <br />
+Step 2: Install Putty and WinSCP. We are going to use them to configure our password less ssh conectivity. <br />
+Step 3: If you are using Windows OS, go to C:\Users\%username%\ and search for .ssh folder (its a hidden folder, make sure to check properly.) <br />
+Step 4: If you didn't find the .ssh folder in Step 3, open command prompt and run `ssh-keygen -t rsa`. Now it must me asking some questions over there (BORINGGGG). We will keep smashing enter, until all the question ends (YES we are inattentive and careless). <br />
+Step 5: Now that .ssh is there, open it and you must be having id_rsa files over there. <br />
+Step 6: We created a folder AnsibleLab (anywhere you want). Opened it. then we opened command prompt at this location and run `vagrant init`. Vagrantfile file was generated inside AnsibleLab folder. <br />
+Step 7: Opened the Vagrantfile with notepad and pasted below code: <br />
 
 ```vagrant
 Vagrant.configure("2") do |config|
@@ -88,3 +88,5 @@ Vagrant.configure("2") do |config|
   config.ssh.insert_key = false
 end
 ```
+
+
